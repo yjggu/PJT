@@ -1,0 +1,508 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/* 추가된 CSS 스타일 */
+.corner-image-left img {
+	position: fixed;
+	bottom: 100px;
+	left: 15px;
+	width: 600px; /* 원하는 크기로 조정 */
+	height: auto;
+	z-index: -0; 			
+	opacity: 0.1; /* 이미지 투명도 조절 */
+	filter: brightness(1) blur(2px); /* 이미지 밝기 및 흐림 효과 */
+}
+.corner-image-right img {
+	position: fixed;
+	bottom:10px;
+	left: 900px;
+	width: 400px; /* 원하는 크기로 조정 */
+	height: auto;
+	z-index: -0; 
+	opacity: 0.1; /* 이미지 투명도 조절 */
+	filter: brightness(1) blur(2px); /* 이미지 밝기 및 흐림 효과 */
+	transform: scaleX(-1); /* 이미지 좌우 반전 */
+}
+
+#header {
+	top: 0;
+	/* height: 100px; */
+}
+
+#footer {
+	bottom: 0;
+	height: 10vh;
+	transform: scaleX(0.8);
+	transform: scaleY(0.9); /* 세로 배율 설정 */
+	transform-origin: bottom; /* 기준점을 아래쪽으로 설정 */
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	/* overflow:hidden; */
+}
+
+.pages {
+	height: 70vh;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.page {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	bottom: -100%;
+	transition: bottom .7s;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.page:first-child {
+	bottom: 0;
+}
+
+@
+@keyframes slideInLeft {
+	from {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+/* Animation for image sliding in from the right */
+@keyframes slideInRight {
+	from {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+/* Applying the animations */
+.animated-slide-left {
+	animation: slideInLeft 1s ease-out forwards;
+}
+
+.animated-slide-right {
+	animation: slideInRight 2s ease-out forwards;
+}
+/*  */
+/*  */
+/* 첫번째 페이지 첫번째 페이지 첫번째 페이지 첫번째 페이지 첫번째 페이지 */
+.first {
+	background-color: #e3edff;
+/* 	background-size: cover;
+	background-position: center;
+	background-attachment: fixed; */
+}
+
+.content1 {
+	text-align: left;
+	margin-left: 13%;
+	margin-top: 2%;
+	padding: 10px;
+	font-size: 15px;
+	color: #000080;
+
+}
+
+.highlight01 {
+    color: #14abe4;
+    font-weight: bold;
+}
+
+.text-and-image1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 850px;
+	/* border: 1px solid black; */
+	border-radius: 8px;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+/* 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 그림자 추가 */
+	background-color: #fff; /* 배경색 추가 */
+}
+
+.text1 {
+	text-align: left;
+/* 	background-color: #fff; 배경색 추가 */
+	padding: 10px; /* 텍스트 영역의 패딩 추가 */
+	border-radius: 8px; /* 둥근 모서리 추가 */
+	line-height: 1.4; /* 줄 간격을 1.6으로 설정 */
+}
+
+.text1 p, .text1 h2, .text1 h3 {
+	color: #000000; /* 글자색을 변경 */
+}
+
+.image-container1 {
+	width: 100%;
+	position: absolute;
+	top: 21%;
+	right: -27%;
+	text-align: center;
+	font-size: 30px;
+}
+
+.image-container1 img {
+	width: 300px; /* 고정된 가로 길이 */
+	height: 380px; /* 고정된 세로 길이 */
+}
+/* 첫번째 페이지 첫번째 페이지 첫번째 페이지 첫번째 페이지 첫번째 페이지 */
+/*  */
+/*  */
+/* 두번째 페이지 두번째 페이지 두번째 페이지 두번째 페이지 두번째 페이지 */
+.second {
+	background-color: #ffffff;
+}
+
+.title2 {
+	width: 100%;
+	position: absolute;
+	top: 10%;
+	transform: translateY(-50%);
+	text-align: center;
+	font-size: 30px;
+	color: #000000;
+}
+
+.timeline-event-wrapper{
+	border: 1px solid #000000;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 12px;
+	padding-bottom: 10px;
+	background-color: #e1e0fe;
+	opacity:1;
+	border-radius: 8px;
+	font-weight: bold;
+}
+
+.timeline {
+	width: 800px;
+	max-width: 850px;
+	border-radius: 5px;
+	position: absolute;
+	top: 20%;
+	left: 18%;
+
+}
+
+.timeline-year {
+	font-size: 24px;
+	font-weight: bold;
+	color: #0000a0;
+	text-align: left;
+	/* margin-top: 40px; */
+}
+
+.timeline-event {
+	display: flex;
+	align-items: center;
+}
+
+.timeline-dot {
+	width: 5px;
+	height: 5px;
+	background-color: #ff0000;
+	border-radius: 50%;
+	margin-right: 10px;
+	margin-left: 13px;
+}
+
+.timeline-date {
+	font-size: 24px;
+	font-weight: bold;
+	color: #0080ff;
+	margin-right: 10px;
+}
+
+.timeline-content p {
+	margin-left: 15px;
+	color: #111;
+	font-size: 20px;
+}
+
+.timeline hr {
+	border: 0;
+	height: 1px;
+	background: linear-gradient(to right, #0080ff, #fef4f1);
+	margin: 10px 0;
+}
+/* 두번째 페이지 두번째 페이지 두번째 페이지 두번째 페이지 두번째 페이지 */
+/*  */
+/* sixth page sixth page sixth page sixth page sixth page sixth page*/
+.sixth {
+    background-color: #fff;
+}
+.ci-container {
+	background-color: white; /* 흰색 배경 */
+    display: inline-block; /* 이미지 크기에 맞춰 컨테이너 크기 조정 */
+    padding: 10px; /* 이미지 주변에 여백 추가 */
+	border: 0;
+	margin-right: 140px;
+	margin-bottom: 5px;
+}
+.ci-container img {
+	width: 600px; /* 이미지 너비 조정 */
+    height: 460px; /* 이미지 높이는 비율에 맞게 자동 조정 */
+/*     max-width: 100%; 반응형을 위해 최대 너비 설정
+    max-height: 400px; 최대 높이 설정 */
+	border: 0;
+}
+
+/* sixth page sixth page sixth page sixth page sixth page sixth page*/
+/*  */
+/*  */
+/* 세번째 페이지 세번째 페이지 세번째 페이지 세번째 페이지 세번째 페이지 */
+.third {
+    background-color: #e3edff;
+}
+
+.card_top_container {
+    font-family: 'KoPubDotumProMedium';
+    margin: 0;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100vw; /* 부모 컨테이너의 크기를 화면 전체로 설정 */
+}
+
+.card_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    background-color: #008CD6; /* 기본 배경색 */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 330px;
+    height: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, color 0.3s;
+    /* 호버 시 배경색 및 텍스트 색상 변경을 위한 트랜지션 */
+}
+
+.card:nth-child(1) {
+    background-color: #008CD6; /* 중간 카드 배경색 */
+}
+.card:nth-child(2) {
+    background-color: #0059AB; /* 중간 카드 배경색 */
+}
+
+.card:nth-child(3) {
+    background-color: #001839; /* 마지막 카드 배경색 */
+}
+
+.card:hover {
+    background-color: white; /* 기본 배경색 */
+    color: black;
+    border: 1px solid #D3D3D3;
+    transition: background-color 0.3s, color 0.3s;
+    /* 호버 시 배경색 및 텍스트 색상 변경을 위한 트랜지션 */
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.default-content ul {
+    list-style-type: disc;
+    padding-left: 30px; /* 리스트 아이템의 들여쓰기 조정 */
+}
+
+.hover-content ul {
+    list-style-type: none;
+    padding-left: 10px; /* 리스트 아이템의 들여쓰기 제거 */
+}
+
+.card ul li {
+    margin-bottom: 10px;
+}
+
+.card ul li p {
+    display: inline;
+}
+
+/* .card-img {
+    width: 10px; 
+    height: auto;
+}
+ */
+.hidden {
+    display: none;
+}
+
+.default-content h1, .default-content h2, .hover-content h1, .hover-content h2 {
+    display: inline;
+    margin-right: 5px;
+}
+
+.default-content p, .default-content img, .hover-content p, .hover-content img {
+    display: inline;
+    margin-right: 5px;
+}
+
+.li-highlight01 {
+    font-weight: bold;
+}
+
+.hover-content h1 {
+    color: #008CD6;
+}
+
+.hover-content span {
+    font-weight: bold;
+    color: #008CD6;
+}
+
+.hover-content p {
+    color: #727376;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 20px; /* 원하는 만큼의 아래 여백 설정 */
+    width: calc(100% - 40px); /* padding을 고려한 너비 설정 */
+    margin-left: -20px;
+}
+
+/* 세번째 페이지 세번째 페이지 세번째 페이지 세번째 페이지 세번째 페이지 */
+/*  */
+/*  */
+/* 네번째 페이지 네번째 페이지 네번째 페이지 네번째 페이지 네번째 페이지 */
+.fourth {
+	background-color: #ffffff;
+}
+
+.small-organization-img {
+	width: 780px;
+	height: 450px;
+}
+
+.content4 {
+	text-align: left;
+	margin-left: 25%;
+	margin-top: 5%;
+	padding: 10px;
+}
+
+/* 네번째 페이지 네번째 페이지 네번째 페이지 네번째 페이지 네번째 페이지 */
+/*  */
+/*  */
+/* 다섯번째 페이지 다섯번째 페이지 다섯번째 페이지 다섯번째 페이지 다섯번째 페이지 */
+.fifth {
+	background-color: #e3edff;
+}
+
+.small-img {
+	width: 390px;
+	height: 530px;
+	border: 1px solid black;
+
+}
+
+.content5 {
+	text-align: left;
+	margin-left: 35%;
+	margin-top: 2%;
+	padding: 10px;
+	z-index: 2; 
+}
+/* 다섯번째 페이지 다섯번째 페이지 다섯번째 페이지 다섯번째 페이지 다섯번째 페이지 */
+/*  */
+/*  */
+/*  */
+.pagination {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pagination>li {
+    list-style: none;
+    height: 20px;
+    width: 20px;
+    background: #000000;
+    border-radius: 50%;
+    transition: background .7s;
+}
+
+.pagination>li.active {
+    background: #1e8eff;
+}
+
+.title1 {
+	width: 100%;
+	position: absolute;
+	top: 10%;
+	right: -30%;
+	transform: translateY(-50%);
+	text-align: center;
+	font-size: 30px;
+}
+
+.title2 {
+	width: 100%;
+	position: absolute;
+	top: 10%;
+	left: -30%;
+	transform: translateY(-50%);
+	text-align: center;
+	font-size: 30px;
+	left: -30%;
+}
+
+#topButton {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+/* Hover 시 버튼 스타일 */
+#topButton:hover {
+    background-color: #333;
+    opacity: 1;
+}

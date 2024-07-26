@@ -1,0 +1,176 @@
+@charset "utf-8";
+@import url('reset.css');
+@import url('content.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+
+/* 초기화 
+html {overflow-y:scroll}
+body {margin:0;padding:0;font-size:0.75em;font-family:'Malgun Gothic', dotum, sans-serif;background:#e7e7e7}
+html, h1, h2, h3, h4, h5, h6, form, fieldset, img {margin:0;padding:0;border:0}
+h1, h2, h3, h4, h5, h6 {font-size:1em;font-family:'Malgun Gothic', dotum, sans-serif}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block}
+
+ul, dl,dt,dd {margin:0;padding:0;list-style:none}
+legend {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden}https://drive.google.com/drive/folders/0B50Dk08VnlwlaDRsQjZvbGdnaWM
+label, input, button, select, img {vertical-align:middle;font-size:1em}
+input, button {margin:0;padding:0;font-family:'Malgun Gothic', dotum, sans-serif;font-size:1em}
+input[type="submit"]{cursor:pointer}
+button {cursor:pointer}
+
+textarea, select {font-family:'Malgun Gothic', dotum, sans-serif;font-size:1em}
+select {margin:0}
+p {margin:0;padding:0;word-break:break-all}
+hr {display:none}
+pre {overflow-x:scroll;font-size:1.1em}
+a {color:#000;text-decoration:none}
+*/
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.footer {
+    background: #333;
+    color: #fff;
+    position: relative;
+    width: 100%;
+}
+
+/* 하단 레이아웃 */
+#ft {
+    background: #333;
+    color: #fff;
+    position: relative; 
+}
+#ft h1 {
+    position: absolute;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+/* #ft_wr {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+} */
+.ft-group1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#ft_catch {
+    width: 185px;
+    margin-right: 5vw;
+}
+#ft_catch img {
+    max-width: 100%;
+    height: auto;
+}
+#ft-info {
+    flex: 1;
+    padding-top: 30px;
+}
+#ft-info li {
+    position: relative;
+    font-size: 15px;
+    color: #888;
+    padding: 5px 0 5px 100px;
+    font-weight: 400;
+    list-style: none;
+}
+#ft-info li span {
+    position: absolute;
+    left: 0;
+    top: 6px;
+    display: inline-block;
+    width: 100px;
+    color: #ddd;
+}
+#ft-info li a {
+    font-size: 15px;
+    color: #888;
+}
+.ft-family {
+    position: relative;
+    margin-top: 30px;
+}
+
+.ft-family p {
+    width: 260px;
+    height: 60px;
+    background: #404040;
+    margin: 0;
+}
+
+.ft-family p a {
+    display: block;
+    font-size: 15px;
+    color: #eee;
+    padding: 0 15px;
+    line-height: 60px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.ft-family p a i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #eee;
+}
+
+.ft-family .fam-list {
+    display: none;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background: #555;
+}
+
+.ft-family .fam-list li {
+    list-style: none;
+}
+
+.ft-family .fam-list li a {
+    display: block;
+    font-size: 15px;
+    color: #a4a4a4;
+    letter-spacing: 0;
+    padding: 3px 0;
+    transition: all ease-in .2s;
+}
+
+.ft-family .fam-list li a:hover {
+    color: #ddd;
+}
+
+.ft-group2 {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #434343;
+    padding: 20px 0;
+    margin-top: 60px;
+}
+#ft_copy {
+    color: #888;
+    font-size: 15px;
+}
+#ft_link {
+    display: flex;
+}
+#ft_link a {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 15px;
+    color: #888;
+}
+#ft_link a.privacy {
+    color: #eee;
+}
+
+}
+

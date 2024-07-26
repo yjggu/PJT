@@ -1,0 +1,52 @@
+@charset "EUC-KR";
+/* 상단 css */
+
+/* 고정 헤더 스타일 */
+.fixed-header {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 1284px;
+    height: 10px;
+    background-color: white; /* 필요에 따라 색상 조정 */
+    z-index: 1000; /* 다른 요소 위에 표시되도록 설정 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* 선택 사항: 더 나은 가시성을 위한 그림자 */
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+body {
+    padding-top: 0px; 헤더 높이에 따라 조정
+}
+
+#logo {
+    flex: 0 0 auto; /* 로고의 크기를 고정 */
+}
+
+#logo img {
+    height: 60px; /* 필요에 따라 로고 크기 조정 */
+}
+
+.navigation a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black; /* 필요에 따라 색상 조정 */
+}
+
+.login-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 7px 20px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #333; /* 호버 효과를 위한 약간 밝은 색상 */
+}

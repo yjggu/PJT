@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'KoPubBatangProBold';
+  src: url('/font/KoPubBatangProBold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPubBatangProLight';
+  src: url('./font/KoPubBatangProLight.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPubBatangProMedium';
+  src: url('./font/KoPubBatangProMedium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPubDotumProBold';
+  src: url('./font/KoPubDotumProBold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPubDotumProLight';
+  src: url('./font/KoPubDotumProLight.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPubDotumProMedium';
+  src: url('./font/KoPubDotumProMedium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+body{
+	margin:50px;
+ }
+h1 {
+    font-family: 'KoPubDotumProBold';
+	margin-left: 10%;
+	margin-right: 10%;
+	font-weight: bold;
+	color: #0095DA;
+	text-align: left;
+	margin-bottom: 20px;
+}
+h2 {
+    font-family:'KoPubDotumProBold';
+	font-weight: bold;
+	color: #A6A6A6;
+	text-align: left;
+}
+table {
+	width: 80%;
+	border-collapse: collapse;
+	margin: auto;
+}
+th, td {
+	font-family: 'KoPubDotumProLight', serif;
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+input {
+	background-color: #ebebeb;
+	border-width: 0;
+}
+.step-indicator{
+	margin: 5%;
+}
+.btn01{
+	font-family:'KoPubDotumProBold';
+    border-radius: 5px;
+    background-color:white;
+    border: 2px solid #0095DA;
+    font-size: 16px;
+    text-align: center;
+    color: #0095DA;
+    box-shadow: none;
+}
+
+.btn02{
+	font-family:'KoPubDotumProBold';
+	margin-top: 20px;
+	width: 80%;
+	height: 60px;
+	text-align:center;
+    border-radius: 5px;
+    background-color:#0095DA;
+    border: 2px solid #0095DA;
+    font-size: 25px;
+    color: white;
+    box-shadow: none;
+}
+
+
+/* 이용약관 동의 CSS */
+/* 글박스 */
+.agree-scroll-box {
+	
+	background-color:#F2F2F2;
+    width: 70%;
+    height: 200px;
+    border: 1px solid #ccc; 
+    overflow: auto;
+    
+}
+
+/* 글자 스타일 */
+.agree-content {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.member-complete-box {
+	 text-align: center;
+	 background-color: #F2F2F2;
+	 width: 70%;
+	 margin: auto; /* 가운데 정렬 */
+	 padding: 20px; /* 여백 추가 */
+	 border: 1px solid #ccc;
+}
+
+
+.btn03 {
+	font-family:'KoPubDotumProBold';
+	margin:10px;
+    width: 30%;
+	text-align:center;
+    border-radius: 5px;
+    background-color:#0095DA;
+    border: 2px solid #0095DA;
+    font-size: 25px;
+    color: white;
+    box-shadow: none;
+}
+.btn04{
+	font-family:'KoPubDotumProBold';
+    border-radius: 5px;
+    background-color:white;
+    border: 2px solid #0095DA;
+    font-size: 25px;
+    text-align: center;
+    color: #0095DA;
+    box-shadow: none;
+}

@@ -1,0 +1,255 @@
+@charset "EUC-KR";
+/* 폰트 */
+@font-face {
+  font-family: 'KoPubBatangProBold';
+  src: url('./font/KoPubBatangProBold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPubBatangProLight';
+  src: url('./font/KoPubBatangProLight.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPubBatangProMedium';
+  src: url('./font/KoPubBatangProMedium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPubDotumProBold';
+  src: url('./font/KoPubDotumProBold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPubDotumProLight';
+  src: url('../font/KoPubDotumProLight.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPubDotumProMedium';
+  src: url('./font/KoPubDotumProMedium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*상단 제목 및 사이드 메뉴  */
+body{
+    background-image: url('../../resources/main_image/header_image/sky01.jpg');
+    background-repeat: no-repeat; /* 이미지 반복 안함 */
+    background-size: 100% auto; /* 이미지가 가로 크기에 맞춰지도록 조정 */
+    background-position: top; /* 이미지가 맨 위 중앙에 위치 */
+    background-color: #fff; /* 여백을 흰색으로 채움 */
+    position: relative;
+    zoom: 1;
+}
+/* hr {
+    border: none; 기본 경계선 제거
+    height: 1px; 선의 높이 설정
+    background: #D3D3D3; 그라데이션 색상 설정
+    margin: 10px 0; 위아래 간격 설정
+} */
+.container {
+    /* display: flex; */
+    width: 100% !important; /* 전체 너비로 설정 */
+    max-width: none !important; /* 최대 너비 제한 해제 */
+    margin: 0; /* 수평 가운데 정렬 제거 */
+    padding-top: 100px;
+    padding-bottom: 100px;
+background: linear-gradient(to bottom, 
+                            rgba(255, 255, 255, 0) 0%, 
+                            rgba(255, 255, 255, 0.1) 2%, 
+                            rgba(255, 255, 255, 0.2) 4%, 
+                            rgba(255, 255, 255, 0.4) 8%, 
+                            rgba(255, 255, 255, 0.6) 10%, 
+                            rgba(255, 255, 255, 0.8) 12%,  
+                            rgba(255, 255, 255, 1) 15%);
+                                
+    background-size: 100% 100%; /* 그라데이션 크기 조정 */
+    background-repeat: no-repeat; /* 반복 없애기 */
+    background-position: top; /* 상단에 그라데이션 위치 설정 */
+    
+}
+.content{
+	padding-top: 100px;
+	width: 1284px;
+	margin: 0 auto;
+	justify-content: center; 
+	align-items: center;
+	/* height: 100vh; */
+}
+.content h1{
+	font-family: 'KoPubDotumProBold';
+	color: #757575; 
+	font-size: 40px; 
+	font-weight:bold;
+}
+.content table{
+	font-family: 'KoPubDotumProMedium';
+	width: 60%;
+	margin: 0 auto;
+	
+}
+.titleBackground {
+   /*  padding: 20px; */ /* 내부 여백 추가 */
+    margin-top: 2%; /* 위쪽 간격 설정 */
+    margin-left: 2%; /* 위쪽 간격 설정 */
+    margin-right: 2%; /* 아래쪽 간격 설정 */
+}
+
+.titleBackground h1 {
+	font-family: 'KoPubDotumProBold';
+	color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: left; /* 중앙 정렬 */
+    
+}
+        
+        
+.product-section {
+    margin-bottom: 30px;
+}
+
+.product-section h3 {
+    font-size: 20px; /* 폰트 크기 설정 */
+    color: #0056b3; /* 텍스트 색상 설정 */
+    padding-bottom: -50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.product-section h3:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #0056b3, #F0F8FF); /* 그라데이션 색상 */
+    position: absolute;
+    bottom: 1px; /* h3 요소의 아래쪽에 위치 */
+    left: 0;
+}
+
+.detail-link a {
+    color: #DC143C;
+    text-decoration: none;
+}
+
+.detail-link {
+    top: 20px;       /* 위쪽 위치 설정 */
+    right: 200px; /* 오른쪽 위치 설정 */
+    color: #DC143C;
+    text-decoration: none;
+}
+.product-section a.detail-link {
+    font-size: 15px; /* 폰트 크기 설정 */
+    color: #0056b3; /* 텍스트 색상 설정 */
+    text-decoration: none; /* 밑줄 제거 */
+    position: absolute; /* 절대 위치 설정 */
+    right: 0; /* 오른쪽 정렬 */
+    top: 0; /* 상단 정렬 */
+    margin-left: 20px; /* 왼쪽 마진 추가 */
+    vertical-align: middle; /* 세로 정렬 가운데 */
+}
+
+.title-wrapper {
+    background-color: #E0ECF8;
+    padding: 20px;
+    margin: -20px -20px 40px -20px; /* 좌우 여백 제거 및 위 아래 여백 추가 */
+    border-radius: 7px 7px 0 0; /* 둥근 모서리 설정 */
+}
+
+.content h2 {
+    font-size: 40px; /* 폰트 크기 설정 */
+    margin-bottom: 60px;
+}
+
+.step-indicator{
+	margin: 5%;
+}
+/*input*/
+.loginInputImg {
+    width: 60px;
+    height: 50px;
+    margin-right: 30px;
+    
+}
+
+/* 버튼 */
+.btn01{
+	font-family:'KoPubDotumProBold';
+    border-radius: 5px;
+    background-color:white;
+    border: 2px solid #0095DA;
+    font-size: 16px;
+    text-align: center;
+    color: #0095DA;
+    box-shadow: none;
+}
+
+.btn02{
+	font-family:'KoPubDotumProBold';
+	margin-top: 20px;
+	width: 80%;
+	height: 60px;
+	text-align:center;
+    border-radius: 5px;
+    background-color:#0095DA;
+    border: 2px solid #0095DA;
+    font-size: 25px;
+    color: white;
+    box-shadow: none;
+}
+.btn03 {
+	font-family:'KoPubDotumProBold';
+	margin:10px;
+    width: 100%;
+    height:50px;
+	text-align:center;
+    border-radius: 5px;
+    background-color:#0095DA;
+    border: 2px solid #0095DA;
+    font-size: 20px;
+    color: white;
+    box-shadow: none;
+}
+.btn04{
+	font-family:'KoPubDotumProBold';
+	margin:10px;
+	width: 100%;
+	height:50px;
+    border-radius: 5px;
+    background-color:white;
+    border: 2px solid #0095DA;
+    font-size: 20px;
+    text-align: center;
+    color: #0095DA;
+    box-shadow: none;
+}
+
+.btn-container{
+	text-align: center;
+}
+.btn05 {
+	font-family:'KoPubDotumProBold';
+	margin:10px;
+    width: 40%;
+    height:50px;
+	text-align:center;
+    border-radius: 5px;
+    background-color:#0095DA;
+    border: 2px solid #0095DA;
+    font-size: 20px;
+    color: white;
+    box-shadow: none;
+    display: inline-block;
+}

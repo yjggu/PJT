@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'KoPub Batang Pro Bold';
+  src: url('./font/KoPubBatangProBold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPub Batang Pro Light';
+  src: url('./font/KoPubBatangProLight.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPub Batang Pro Medium';
+  src: url('./font/KoPubBatangProMedium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPub Dotum Pro Bold';
+  src: url('./font/KoPubDotumProBold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPub Dotum Pro Light';
+  src: url('./font/KoPubDotumProLight.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPub Dotum Pro Medium';
+  src: url('./font/KoPubDotumProMedium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'KoPub Batang Pro Bold';
+}
+
+body {
+  font-family: 'KoPub Dotum Pro Medium';
+}
+.join_buttom{
+	
+}
+
+

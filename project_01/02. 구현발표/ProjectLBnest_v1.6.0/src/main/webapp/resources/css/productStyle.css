@@ -1,0 +1,285 @@
+/* productStyle.css */
+@font-face {
+	font-family: 'KoPubBatang';
+	src:
+		url('${pageContext.request.contextPath}/resources/font/KoPubBatang_ProMedium.otf')
+		format('opentype');
+	font-weight: 500;
+}
+
+#fixed-header {
+	/* 	background-color: #f4f4f4; */
+	
+}
+
+body {
+	font-family: 'KoPubBatang';
+	background-color: #f4f4f4;
+}
+
+#main-container {
+	margin: auto;
+	background: #fff;
+	padding-top: 2px;
+	padding-bottom: 150px;
+	/* margin-bottom: 15px; */
+}
+
+#container {
+	width: 1284px;
+	display: flex;
+	flex-direction: column; /* 수직으로 쌓이도록 설정 */
+	margin: 0 auto;
+	border-radius: 7px;
+	display: flex;
+	flex-direction: row;
+}
+
+#titleBackground {
+	width: 100%;
+	max-width: none;
+	margin: 0;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: linear-gradient(to bottom, 
+	                            rgba(255, 255, 255, 0) 0%, 
+	                            rgba(255, 255, 255, 0.1) 5%, 
+	                            rgba(255, 255, 255, 0.2) 10%, 
+	                            rgba(255, 255, 255, 0.4) 17%, 
+	                            rgba(255, 255, 255, 0.6) 27%, 
+	                            rgba(255, 255, 255, 0.8) 33%,  
+	                            rgba(255, 255, 255, 1) 50%);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+#title h2 {
+	font-family: 'KoPubDotumProBold';
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 2%;
+}
+
+#leftColumn {
+	position: absolute;
+	top: 150px;
+	width: 210px;
+	height: auto;
+	background: #EFF2FB;
+	color: #000080;
+	padding-left: 15px;
+	padding-right: 10px;
+	margin: 3px;
+	border-radius: 7px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+	border-radius: 7px;
+	z-index: 9999;
+	width: 250px;
+}
+
+#leftColumn a {
+	text-decoration: none;
+	color: black;
+	transition: color 0.3s ease-in-out;
+	color: #111111;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+#leftColumn a:hover {
+	color: #007bff;
+}
+
+#leftColumn a.active {
+	color: #ff0; /* 클릭된 항목의 색상 설정 */
+}
+
+#leftColumn h2 {
+	font-size: 15px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+#leftColumn ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+#leftColumn ul li {
+	transition: transform 0.3s ease-in-out;
+}
+
+#leftColumn h3 a {
+	color: #fff;
+	text-decoration: none;
+	display: block; /* 전체 영역 클릭 가능 */
+	padding: 10px 0;
+	text-align: center;
+	background-color: #004099;
+	border: 2px solid #004099;
+	border-radius: 5px;
+	margin-top: 30px;
+}
+
+#leftColumn ul li:hover {
+	transform: translateY(-5px);
+}
+
+/* 호버할 때 색상 변경 */
+#leftColumn h3 a:hover {
+	background-color: #003080;
+	border-color: #003080;
+}
+
+#content1 {
+	height: 20px;
+	padding: 6px;
+	align-items: center;
+	width: 25%;
+	box-sizing: border-box;
+	/* box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+#content2 {
+	padding: 20px;
+	margin-left: auto;
+	width: 90%;
+	box-sizing: border-box;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	border-radius: 7px 7px 0 0;
+}
+
+.product-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.detail-link a {
+	color: #DC143C;
+	text-decoration: none;
+}
+
+.detail-link {
+	top: 20px;
+	right: 200px;
+	color: #DC143C;
+	text-decoration: none;
+}
+
+.title-wrapper {
+	background-color: #E0ECF8;
+	padding: 20px;
+	margin: -20px -20px 40px -20px;
+	border-radius: 7px 7px 0 0;
+}
+
+#content2 h2 {
+	font-size: 40px;
+	margin-bottom: 60px;
+}
+
+.product-section {
+	margin-bottom: 30px;
+}
+
+.product-section h3 {
+	font-size: 15px;
+	color: #0056b3;
+	padding-bottom: -50px;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+.product-section h3:after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(to right, #0056b3, #F0F8FF);
+	position: absolute;
+	bottom: 1px;
+	left: 0;
+}
+
+.product-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.product-table tbody {
+	background: #f9f9f9;
+}
+
+.product-detail {
+	margin-bottom: 15px;
+}
+
+.product-detail .label {
+	font-weight: bold;
+	color: #8B4513;
+}
+
+.product-detail .label:before {
+	content: '* ';
+	color: #333;
+	margin-right: 4px;
+}
+
+.product-detail .value {
+	color: #555;
+}
+
+.product-section {
+	margin-bottom: 30px;
+	position: relative; /* 상대 위치 설정 */
+}
+
+.product-section h3 {
+	font-size: 24px;
+	color: #0056b3;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+.product-section a.detail-link {
+	font-size: 15px;
+	color: #0056b3;
+	text-decoration: none; /* 밑줄 제거 */
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin-left: 20px;
+	vertical-align: middle;
+}
+
+.value {
+	display: block;
+	text-indent: 1em;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	background: #D3D3D3;
+	/* 	margin: 10px 0; */
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media ( max-width : 768px) {
+	#leftColumn {
+		position: static;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	#content2 {
+		margin-left: 0;
+		padding-left: 0;
+		max-width: 100%;
+	}
+}

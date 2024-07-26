@@ -1,0 +1,231 @@
+@charset "EUC-KR";
+
+/* @font-face {
+	font-family: 'KoPubBatang';
+	src:
+		url('${pageContext.request.contextPath}/resources/font/KoPubBatang_ProMedium.otf')
+		format('opentype');
+	font-weight: 500;
+} */
+
+/* #fixed-header {
+	padding: -20px;
+} */
+#main-container {
+	background-color: white;
+}
+
+#titleBackground {
+	width: 100%;
+	max-width: none;
+	margin: 0;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, 0.05) 2%, rgba(255, 255, 255, 0.1) 2%,
+		rgba(255, 255, 255, 0.18) 6%, rgba(255, 255, 255, 0.25) 4%,
+		rgba(255, 255, 255, 0.4) 12%, rgba(255, 255, 255, 0.5) 8%,
+		rgba(255, 255, 255, 0.6) 18%, rgba(255, 255, 255, 0.8) 10%,
+		rgba(255, 255, 255, 1) 15%);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+#title h2 {
+	font-family: 'KoPubDotumProBold';
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 2%;
+}
+
+.error-message {
+	color: red;
+	display: none;
+	margin-left: 10px;
+}
+
+
+legend {
+	font-size: 25px; 	/* legend 글자 크기 조절 */
+	font-weight: bold;
+	/* 	margin-top: 20px; */
+}
+
+#container {
+	display: flex;
+	flex-direction: column; /* 수직으로 쌓이도록 설정 */
+	width: 1284px;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 7px;
+	padding: 20px; /* 추가된 패딩 */
+	justify-content: center;
+	align-items: center;
+}
+
+#titleBackground {
+	width: 100%;
+	max-width: none;
+	margin: 0;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, 0.05) 2%, rgba(255, 255, 255, 0.1) 4%,
+		rgba(255, 255, 255, 0.18) 6%, rgba(255, 255, 255, 0.25) 8%,
+		rgba(255, 255, 255, 0.4) 12%, rgba(255, 255, 255, 0.5) 15%,
+		rgba(255, 255, 255, 0.6) 18%, rgba(255, 255, 255, 0.8) 20%,
+		rgba(255, 255, 255, 1) 25%);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: top;
+
+}
+
+#titleBackground h2 {
+	font-size: 30px;
+	text-align: center; /* 중앙 정렬 */
+	color: #000; /* 텍스트 색상 설정 */
+}
+
+#r_date:disabled {
+	background-color: #e9ecef; /* 회색 배경색 */
+	cursor: not-allowed; /* 클릭 불가 커서 */
+}
+
+fieldset {
+	border: 0;
+	/* padding: 20px; */
+	width: 90%; /* 크기 조절 */
+	border-radius: 8px;
+	margin: 0 auto 20px auto; /* 중앙 정렬 및 간격 조정 */
+	/* margin-top: 70px; */
+}
+
+.custom-hr {
+	border: 0;
+	height: 2px;
+	background: linear-gradient(to right, #0056b3, #F0F8FF);
+	/* 원하는 그라데이션 색상으로 변경하세요 */
+	margin-top: -5px;
+	width: 850px;
+}
+
+table {
+	/* border: 1px solid black; */
+	width: 100%; /* 테이블 너비를 100%로 설정 */
+	border-spacing: 20px; /* 셀 간격을 20px로 설정 */
+}
+
+td {
+	padding: 10px; /* 셀 내부 패딩을 10px로 설정 */
+}
+
+label {
+	width: 150px;
+	font-weight: bold;
+	font-size: 20px; /* 레이블 글자 크기 조절 */
+}
+
+input, select, textarea {
+	font-size: 20px; /* 입력 필드 글자 크기 조절 */
+}
+
+.note {
+	margin-top: -10px; /* 상단 간격을 줄임 */
+	margin-bottom: -10px; /* 하단 간격을 없앰 */
+}
+
+#reservation-message {
+	font-size: 14px; /* reservation-message 글자 크기 조절 */
+	margin-top: 0px; /* reservation-message와 note 사이의 간격 조정 */
+}
+
+textarea#r_memo {
+	width: 80%; /* 원하는 너비 값으로 설정 */
+	height: 150px; /* 원하는 높이 값으로 설정 */
+	box-sizing: border-box; /* 추가: 패딩과 보더를 포함한 너비와 높이를 지정 */
+	resize: none;
+}
+
+.fixed-width {
+	width: 200px; /* 원하는 고정 너비 값으로 설정 */
+}
+
+.phone-input {
+	display: flex;
+	align-items: center;
+}
+
+.phone-input select, .phone-input input {
+	margin-right: 5px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 14px; /* 입력 필드 글자 크기 조절 */
+	width: 105px; /* 추가된 코드: 입력 필드 너비 설정 */
+}
+
+.radio-group {
+	display: flex;
+	align-items: center;
+}
+
+.radio-group label {
+	margin-right: 10px;
+	font-size: 16px; /* 레이블 글자 크기 조절 */
+}
+
+.agreement {
+	margin-top: 20px;
+	margin-left: 13%;
+	display: flex;
+	align-items: center;
+}
+
+.agreement label {
+	cursor: pointer;
+	margin-left: 5px;
+	font-size: 16px; /* 레이블 글자 크기 조절 */
+}
+
+button {
+	background-color: #0078d7;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 0 auto; /* 가로 중앙 정렬 */
+}
+
+button:hover {
+	background-color: #003080; /* 호버 시 배경 색상 변경 */
+	border-color: #003080; /* 호버 시 테두리 색상 변경 */
+}
+
+.button-container {
+	text-align: center; /* 중앙 정렬 */
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+/* .button-container:hover {
+	background-color: #003080; 호버 시 배경 색상 변경
+	border-color: #003080; 호버 시 테두리 색상 변경
+} */
+.agreement {
+	margin-left: 15%;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	flex-wrap: nowrap; /* 추가: 줄바꿈 방지 */
+}
+
+.agreement label {
+	font-size: 20px;
+	white-space: nowrap; /* 추가: 라벨 텍스트 줄바꿈 방지 */
+}

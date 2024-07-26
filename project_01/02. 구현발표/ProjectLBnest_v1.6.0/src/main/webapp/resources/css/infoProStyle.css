@@ -1,0 +1,184 @@
+@charset "EUC-KR";
+
+body {
+	font-family: 'KoPubBatang';
+	background-color: #f4f4f4;
+	/* 	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f4f4f4; */
+}
+
+#main-container {
+	display: flex;
+	margin: auto;
+	background: #fff;
+	/* 	width: 1274px; */
+	/* 	border-radius: 7px; */
+	padding-top: 2px;
+	padding-bottom: 150px;
+/* 	margin-bottom: 15px; */
+}
+
+#titleBackground {
+    width: 100%; /* 전체 너비로 설정 */
+    max-width: none; /* 최대 너비 제한 해제 */
+    margin: 0; /* 수평 가운데 정렬 제거 */
+    padding-top: 50px;
+    padding-bottom: 50px;
+	background: linear-gradient(to bottom, 
+	                            rgba(255, 255, 255, 0) 0%, 
+	                            rgba(255, 255, 255, 0.1) 5%, 
+	                            rgba(255, 255, 255, 0.2) 10%, 
+	                            rgba(255, 255, 255, 0.4) 17%, 
+	                            rgba(255, 255, 255, 0.6) 27%, 
+	                            rgba(255, 255, 255, 0.8) 33%,  
+	                            rgba(255, 255, 255, 1) 50%);
+    background-size: 100% 100%; /* 그라데이션 크기 조정 */
+    background-repeat: no-repeat; /* 반복 없애기 */
+    background-position: top; /* 상단에 그라데이션 위치 설정 */
+}
+
+#title h2 {
+	font-family: 'KoPubDotumProBold';
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 2%;
+}
+
+#container {
+	display: flex;
+	margin: 0 auto;
+	width : 1284px; 
+	ustify-content : center;
+	align-items: flex-start;
+	justify-content: center;
+	width: 1284px;
+	/* 	border-right: 1px solid #ccc; */
+}
+
+#content2 {
+	flex-grow: 1;
+	background-color: #ffffff;
+	padding-left: 50px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	min-height: 1000px;
+	width: 800px;
+}
+
+#content2 h2 {
+	position: relative;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #800000;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	text-align: left;
+	background: linear-gradient(to right, #f0f3f9, #fff);
+	border-top-left-radius: 10px;
+/* 	padding-top: 20px; */
+	padding-bottom: 20px;
+	height: 30px;
+	width: 80%;
+}
+
+#content2 h2::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(to right, #f0f3f9, #F0F8FF);
+}
+
+#content2 h2::before {
+	top: 0;
+}
+
+#content2 h2::after {
+	bottom: 0;
+}
+
+.section {
+	margin-left: 20px;
+	margin-bottom: 10px;
+	width: 790px;
+}
+
+.section h3 {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #400000;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.table-container {
+	padding-bottom: 30px;
+	padding-left: 40px;
+	padding-right: 10px;
+	width: 900px;
+}
+
+table {
+	/* 	width: 100%; */
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+th {
+	width: 150px;
+	background-color: #f2f2f2;
+}
+
+td {
+	width: 700px;
+}
+
+.tabs {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	align-items: flex-end; /* 오른쪽 정렬*/
+}
+
+.tab {
+	width: 140px;
+	padding: 10px 10px;
+	cursor: pointer;
+	background-color: #f1f3f8;
+	border-color: #9eb1da;
+	border: 2px solid #d1daed;
+	margin-bottom: 3px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	font-size: 15px;
+}
+
+.tab.active {
+	background-color: #3691e7;
+	border: 2px solid #0000a0;
+	color: white;
+	font-weight: bold;
+	width: 160px;
+}
+
+.tab-content {
+	display: none;
+}
+
+
+.tab-content.active {
+	display: block;
+}

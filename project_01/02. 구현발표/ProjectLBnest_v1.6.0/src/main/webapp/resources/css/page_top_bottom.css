@@ -1,0 +1,258 @@
+@charset "EUC-KR";
+/* 상단 css */
+.ft-family .fam-list li a {
+	display: block;
+	font-size: 15px;
+	color: #a4a4a4;
+	letter-spacing: 0;
+	padding: 3px 0;
+}
+
+.ft-family .fam-list li a:hover {
+	color: #ddd;
+}
+
+.login_button {
+	position: absolute;
+	top: 40px;
+	right: 110px;
+	background: black;
+	color: white;
+	font-weight: bold;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+* {
+	font-family: 'KoPub Dotum_Pro Bold', sans-serif !important;
+}
+
+.image-container {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	opacity: 0;
+	transition: opacity 1s ease-out, transform 1s ease-out;
+	z-index: 1;
+}
+
+.image-container img {
+	max-width: 100%;
+	height: auto;
+}
+
+.image-container.animate {
+	opacity: 1;
+	transform: translateX(0) translateY(-50%);
+}
+
+@media ( max-width : 768px) {
+	.image-container {
+		position: static;
+		transform: none;
+		opacity: 1;
+		margin-top: 20px;
+		z-index: 1;
+	}
+}
+
+.image-container2 {
+	position: absolute;
+	right: -500px;
+	top: -50%;
+	width: auto;
+	transform: translateY(-50%);
+	transition: opacity 1s ease-out, transform 1s ease-out, border-radius 1s
+		ease-out;
+	z-index: 2;
+	border-radius: 5%;
+	overflow: hidden;
+	opacity: 0;
+	transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.image-container2 img {
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	border-radius: 5%;
+}
+
+.image-container2.animate {
+	transform: translateX(0) translateY(-50%);
+	z-index: 2;
+	opacity: 1;
+}
+
+@media ( max-width : 768px) {
+	.image-container2 {
+		position: static;
+		transform: none;
+		margin-top: 20px;
+		z-index: 2;
+		border-radius: 5%;
+	}
+}
+
+@
+keyframes slideInFromRight {to { transform:translateX(0)translateY(-50%);
+	
+}
+
+}
+.mVisual {
+	overflow: hidden;
+	text-align: center;
+}
+
+.loan-option {
+	opacity: 0;
+	transform: translateX(-100%);
+}
+
+.loan-option.animate {
+	animation: slideIn 1s forwards ease-out;
+}
+
+@
+keyframes slideIn {from { opacity:0;
+	transform: translateX(-100%);
+}
+
+to {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+}
+.loan-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.loan-container div {
+	padding: 10px 20px;
+	border: 5px;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+	color: #e6edff;
+	background-color: black;
+}
+
+.center-text {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.idx-careers {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	height: 100%;
+	color: black;
+}
+
+.animated-image-container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-right: 10px;
+	background-color: white;
+}
+
+.animated-image {
+	opacity: 0;
+	transform: translate(150px, 0px);
+	transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+	width: 100px;
+	height: auto;
+	border-radius: 5px;
+	margin-left: -150px;
+	background-color: #000000;
+}
+
+.animated-image.visible {
+	opacity: 1;
+	transform: translate(150px, 0px);
+	background-color: #000000;
+}
+
+.car-txt {
+	max-width: 600px;
+	text-align: right;
+	margin-top: 50px;
+	background-color: white;
+	color: black;
+}
+
+.ft-collaboration {
+	text-align: center;
+	background-color: white;
+}
+
+#demo-1 {
+	background: url('C:/Users/user/Desktop/프로젝트 html 파일/건물_이미지_3.jpg')
+		no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+.header.enter {
+	background-color: #fff !important;
+	backdrop-filter: none !important;
+	-webkit-backdrop-filter: none !important;
+	transition: all ease-in 2s !important;
+}
+
+#gnb_background {
+	width: 100%;
+	height: 350px;
+	margin: auto 0;
+	display: none;
+	overflow: hidden;
+	border-top: 1px solid #fff;
+	left: 0;
+	top: 0;
+	background-color: #fff;
+	backdrop-filter: none;
+	-webkit-backdrop-filter: none;
+	z-index: 10;
+	transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+	/* 커스텀 부드러운 애니메이션 */
+}
+
+#gnb ul li:hover #gnb_background, #gnb ul li:focus #gnb_background {
+	display: block !important;
+}
+
+#gnb>ul>li>a, #gnb ul li .menu ul li a, #gnb ul li .menu ul li a:hover {
+	color: black !important;
+}
+
+#gnb ul li:hover .menu, #gnb ul li:focus .menu {
+	display: block !important;
+	background-color: white !important;
+	transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+	/* 커스텀 부드러운 애니메이션 */
+}
+.login_button {
+	position: absolute;
+	top: 40px;
+	right: 110px;
+	background: black;
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}

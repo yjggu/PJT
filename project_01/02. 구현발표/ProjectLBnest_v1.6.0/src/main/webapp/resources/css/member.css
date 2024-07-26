@@ -1,0 +1,440 @@
+@charset "EUC-KR";
+/* 폰트 */
+@font-face {
+  font-family: 'KoPubBatangProBold';
+  src: url('../font/KoPubBatangProBold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPubBatangProLight';
+  src: url('../font/KoPubBatangProLight.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPubBatangProMedium';
+  src: url('../font/KoPubBatangProMedium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPubDotumProBold';
+  src: url('../font/KoPubDotumProBold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPubDotumProLight';
+  src: url('../font/KoPubDotumProLight.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPubDotumProMedium';
+  src: url('../font/KoPubDotumProMedium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*상단 제목 및 사이드 메뉴  */
+body{
+    background-image: url('../../resources/main_image/header_image/sky01.jpg');
+    background-repeat: no-repeat; /* 이미지 반복 안함 */
+    background-size: 100% auto; /* 이미지가 가로 크기에 맞춰지도록 조정 */
+    background-position: top; /* 이미지가 맨 위 중앙에 위치 */
+    background-color: #fff; /* 여백을 흰색으로 채움 */
+    position: relative;
+    zoom: 1;
+}
+/* #container {
+    display: flex;
+    flex-direction: column; 수직으로 쌓이도록 설정
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+}
+ */
+ .container {
+    /* display: flex; */
+    width: 100% !important; /* 전체 너비로 설정 */
+    max-width: none !important; /* 최대 너비 제한 해제 */
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+	background: linear-gradient(to bottom, 
+                            rgba(255, 255, 255, 0) 0%, 
+                            rgba(255, 255, 255, 0.1) 2%, 
+                            rgba(255, 255, 255, 0.2) 4%, 
+                            rgba(255, 255, 255, 0.4) 8%, 
+                            rgba(255, 255, 255, 0.6) 10%, 
+                            rgba(255, 255, 255, 0.8) 12%,  
+                            rgba(255, 255, 255, 1) 15%);
+                                
+    background-size: cover; /* 그라데이션 크기 조정 */
+    background-repeat: no-repeat; /* 반복 없애기 */
+    background-position: top; /* 상단에 그라데이션 위치 설정 */
+    
+}
+.container h4{
+	font-family: 'KoPubDotumProBold';
+	color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center; /* 중앙 정렬 */	
+	
+}
+.content{
+	padding-top: 30px;
+	width: 1284px;
+/* 	max-width: 1284px; */
+	margin: 0 auto;
+	justify-content: center; 
+	align-items: center;
+	text-align: center; /* 추가된 부분 */
+	/* height: 100vh; */
+}
+.titleBackground {
+   /*  padding: 20px; */ /* 내부 여백 추가 */
+    margin-top: 2%; /* 위쪽 간격 설정 */
+    margin-left: 2%; /* 위쪽 간격 설정 */
+    margin-right: 2%; /* 아래쪽 간격 설정 */
+}
+
+.titleBackground h1 {
+	font-family: 'KoPubDotumProBold';
+	color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: left; /* 중앙 정렬 */
+    
+}
+
+.sidemenu {
+    position: fixed;
+    width: auto;
+    min-width: 150px;
+    max-width: 180px;       /* 최대 너비 제한 */
+    height: auto;
+    min-height: 200px;
+    max-height: 700px;
+    background: #EFF2FB;
+    color: #000080;
+    padding: 20px;
+    top: 280px;             /* 화면 상단으로부터의 위치  자주 바뀜 젠쟝 젠쟝 빨리 찾아라*/
+    margin-left: 2%;
+
+}
+
+.sidemenu a {
+    color: #111111; /* 원하는 색상 코드로 변경 */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidemenu a.active {
+    color: #ff0; /* 클릭된 항목의 색상 설정 */
+}
+
+.sidemenu h2 {
+    font-size: 22px; /* 폰트 크기 설정 */
+    margin-bottom: 10px;
+    text-align: center; /* 중앙 정렬 */
+}
+
+.sidemenu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidemenu ul li {
+    margin-bottom: 10px;
+}
+
+.sidemenu h3 a {
+    color: #fff;
+    text-decoration: none;
+    display: block; /* 전체 영역 클릭 가능 */
+    padding: 10px 0; /* 패딩 추가 */
+    text-align: center; /* 중앙 정렬 */
+    background-color: #004099; /* 배경 색상 */
+    border: 2px solid #004099; /* 테두리 추가 */
+    border-radius: 5px; /* 둥근 모서리 추가 */
+    margin-top: 30px; /* 위쪽 간격 추가 */
+}
+
+.sidemenu h3 a:hover {
+    background-color: #003080; /* 호버 시 배경 색상 변경 */
+    border-color: #003080; /* 호버 시 테두리 색상 변경 */
+}
+
+#content {
+    flex: 1;
+    padding: 30px;
+    margin-left: calc(270px + 20px); /* #leftColumn 너비 + 마진 */
+    max-width: calc(100% - 200px); /* 최대 너비를 화면 크기에 맞춤 */
+    box-sizing: border-box;
+}
+.product-section {
+    margin-bottom: 30px;
+}
+
+.product-section h3 {
+    font-size: 20px; /* 폰트 크기 설정 */
+    color: #0056b3; /* 텍스트 색상 설정 */
+    padding-bottom: -50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.product-section h3:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #0056b3, #F0F8FF); /* 그라데이션 색상 */
+    position: absolute;
+    bottom: 1px; /* h3 요소의 아래쪽에 위치 */
+    left: 0;
+}
+
+.detail-link a {
+    color: #DC143C;
+    text-decoration: none;
+}
+
+.detail-link {
+    top: 20px;       /* 위쪽 위치 설정 */
+    right: 200px; /* 오른쪽 위치 설정 */
+    color: #DC143C;
+    text-decoration: none;
+}
+.product-section a.detail-link {
+    font-size: 15px; /* 폰트 크기 설정 */
+    color: #0056b3; /* 텍스트 색상 설정 */
+    text-decoration: none; /* 밑줄 제거 */
+    position: absolute; /* 절대 위치 설정 */
+    right: 0; /* 오른쪽 정렬 */
+    top: 0; /* 상단 정렬 */
+    margin-left: 20px; /* 왼쪽 마진 추가 */
+    vertical-align: middle; /* 세로 정렬 가운데 */
+}
+
+.title-wrapper {
+    background-color: #E0ECF8;
+    padding: 20px;
+    margin: -20px -20px 40px -20px; /* 좌우 여백 제거 및 위 아래 여백 추가 */
+    border-radius: 7px 7px 0 0; /* 둥근 모서리 설정 */
+}
+
+
+/* 테이블 */
+
+table {
+	font-family: 'KoPubDotumProMedium';
+	font-size: 16px;
+	width: 100%;
+	border-collapse: collapse;
+	margin: auto;
+}
+th, td {
+	
+	font-family: 'KoPubDotumProLight', serif;
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+input {
+	background-color: #ebebeb;
+	border-width: 0;
+}
+/*회원가입 선택*/
+.step-indicator {
+    width: 80%;
+    margin: 0 auto 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* 가운데 정렬을 위해 추가 */
+    gap: 20px;
+}
+.step-indicator h3 {
+    margin: 0; /* 필요에 따라 마진 조정 */
+    font-size: 24px; /* 텍스트 크기 조정 */
+    font-weight: bold; /* 텍스트 굵기 조정 */
+    color: #005BAC; /* 텍스트 색상 */
+}
+.step-indicator img {
+    margin-top: 100px; /* 필요에 따라 마진 조정 */
+    
+    width: 100%; /* 부모 요소에 맞게 크기 조정 */
+    max-width: 1284px; /* 최대 너비 설정 */
+    height: auto; /* 높이를 자동으로 조정 */
+}
+.user-type-selection {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.user-type {
+    width: 350px;
+    height: 350px;
+    border: 2.5pt solid #0095DA;
+    text-align: center;
+    margin: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.user-type:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.user-type img {
+    width: 100%;
+    height: 80%;
+    margin-top: 20px;
+}
+
+.user-type-name {
+    color: #0095DA;
+    font-family: 'KoPubDotumProBold';
+    font-size: 30px;
+	font-wight: bold;
+    margin-top: 80px;
+}
+/*이용약관 동의*/
+.agree-title{
+	font-family: 'KoPubDotumProMedium';
+	font-size: 30px;
+	
+	text-align: left;
+	margin-left:200px;
+	margin-top: 10px;
+}
+.agree-title img{
+	width: 30px;
+	margin-right: 10px;
+}
+.agree-scroll-box {
+   background-color:#F2F2F2;
+    width: 70%;
+    border: 1px solid #ccc; 
+    overflow: auto;
+    display: inline-block; /* 추가된 부분 */
+    text-align: left; /* 내용 텍스트는 왼쪽 정렬 유지 */
+    
+}
+.agree-content {
+    padding: 10px;
+    height: 400px;
+    font-family: 'KoPubDotumProLight';
+    
+}
+.agree-content p{
+	font-size: 16px;
+}
+.agree-content h2{
+	font-size: 20px;
+	text-align: center;
+}
+.agree-content h3{
+	font-size: 16px;
+}
+.agree-content h4{
+	font-size: 16px;
+	text-align: left;
+	margin-left: 20px;
+}
+.container-sub-title{
+	color: #757575;
+	font-family: 'KoPubDotumProBold';
+	font-weight: bold;
+	font-size: 50px;
+	margin-top: 50px;
+	margin-bottom: -50px;
+	margin-left: 130px;
+	text-align: left;
+}
+/*회원가입 폼*/
+.container-form{
+	padding-top: 30px;
+	width: 1284px;
+	margin: 0 auto;
+	justify-content: center; 
+	align-items: center;
+}
+.container-form form{
+	font-family: 'KoPubDotumProMedium';
+	font-size: 16px;
+
+}
+.container-form table{
+	font-family: 'KoPubDotumProMedium';
+	font-size: 16px;
+
+}
+/*회원가입 완료*/
+.member-complete-box{
+	padding: 40px;
+	font-family: 'KoPubDotumProBold';
+	font-size: 25px;
+}
+/* 버튼 */
+.btn01{
+	font-family:'KoPubDotumProBold';
+    border-radius: 5px;
+    background-color:white;
+    border: 2px solid #0095DA;
+    font-size: 16px;
+    text-align: center;
+    color: #0095DA;
+    box-shadow: none;
+}
+
+.btn02{
+	font-family:'KoPubDotumProBold';
+	margin-top: 20px;
+	height: 60px;
+	text-align:center;
+    border-radius: 5px;
+    background-color:#0095DA;
+    border: 2px solid #0095DA;
+    font-size: 25px;
+    color: white;
+    box-shadow: none;
+}
+.btn03 {
+	font-family:'KoPubDotumProBold';
+	margin:10px;
+    width: 30%;
+	text-align:center;
+    border-radius: 5px;
+    background-color:#0095DA;
+    border: 2px solid #0095DA;
+    font-size: 25px;
+    color: white;
+    box-shadow: none;
+}
+.btn04{
+	font-family:'KoPubDotumProBold';
+    border-radius: 5px;
+    background-color:white;
+    border: 2px solid #0095DA;
+    font-size: 25px;
+    text-align: center;
+    color: #0095DA;
+    box-shadow: none;
+}
+
+
